@@ -1,0 +1,12 @@
+Z:\Documents\My Document\Prog\visual studio\Projects\UAVSerialDisplay\UAVSerialDisplay\bin\Debug\UAVSerialDisplay.exe
+Z:\Documents\My Document\Prog\visual studio\Projects\UAVSerialDisplay\UAVSerialDisplay\bin\Debug\UAVSerialDisplay.pdb
+Z:\Documents\My Document\Prog\visual studio\Projects\UAVSerialDisplay\UAVSerialDisplay\obj\Debug\UAVSerialDisplay.csprojResolveAssemblyReference.cache
+Z:\Documents\My Document\Prog\visual studio\Projects\UAVSerialDisplay\UAVSerialDisplay\obj\Debug\UAVSerialDisplay.Form1.resources
+Z:\Documents\My Document\Prog\visual studio\Projects\UAVSerialDisplay\UAVSerialDisplay\obj\Debug\UAVSerialDisplay.Properties.Resources.resources
+Z:\Documents\My Document\Prog\visual studio\Projects\UAVSerialDisplay\UAVSerialDisplay\obj\Debug\UAVSerialDisplay.csproj.GenerateResource.Cache
+Z:\Documents\My Document\Prog\visual studio\Projects\UAVSerialDisplay\UAVSerialDisplay\obj\Debug\UAVSerialDisplay.exe
+Z:\Documents\My Document\Prog\visual studio\Projects\UAVSerialDisplay\UAVSerialDisplay\obj\Debug\UAVSerialDisplay.pdb
+Z:\Documents\My Document\Prog\visual studio\Projects\UAVSerialDisplay\UAVSerialDisplay\bin\Debug\GMap.NET.Core.xml
+Z:\Documents\My Document\Prog\visual studio\Projects\UAVSerialDisplay\UAVSerialDisplay\bin\Debug\GMap.NET.WindowsForms.xml
+Z:\Documents\My Document\Prog\visual studio\Projects\无人机编队\UAVSerialDisplay\UAVSerialDisplay\obj\Debug\UAVSerialDisplay.exe
+Z:\Documents\My Document\Prog\visual studio\Projects\无人机编队\UAVSerialDisplay\UAVSerialDisplay\obj\Debug\UAVSerialDisplay.pdb
