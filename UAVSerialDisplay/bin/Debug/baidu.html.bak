@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>百度地图默认显示卫星地图示例-Mzwu.COM</title>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2"></script>
+<style>
+body,html{height:98%;}
+div{padding:0;border:0;}
+</style>
+</head>
+<body>
+<div style="width:100%;height:100%;" id="container"></div>
+<script type="text/javascript">
+var lon=119.305724;
+var lat=26.192186
+var lonPre=0;
+var latPre=0;
+//var map = new BMap.Map("container", {mapType:BMAP_SATELLITE_MAP});//[BMAP_NORMAL_MAP,BMAP_SATELLITE_MAP,BMAP_HYBRID_MAP]
+var map = new BMap.Map("container", {mapType:BMAP_NORMAL_MAP});
+var point = new BMap.Point(lon, lat);
+var marker=new Array();
+var pointdrawPoint;
+map.centerAndZoom(point, 16);
+
+
+function moveCamera(Clon,Clat,H)//相机视野步进
+{
+		//lon=lon+0.0001;
+		//lat=lat+0.0001;
+		point = new BMap.Point(Clon, Clat);
+		map.centerAndZoom(point, H);
+}
+function move()
+{
+		setInterval(moveCamera, 1000);
+}
+function drawPoint(Clon,Clat,index){
+	var Polygon;
+	map.removeOverlay(marker[index]);
+	pointdrawPoint = new BMap.Point(Clon, Clat);
+	var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png", new BMap.Size(23, 25), {
+    offset: new BMap.Size(10, 25),
+    imageOffset: new BMap.Size(0, 0 - index * 25)
+  });
+  marker[index] = new BMap.Marker(pointdrawPoint, {icon: myIcon});
+  map.addOverlay(marker[index]);
+}  
+function drawLine(Alon,Alat,Blon,Blat,index)
+{
+	var pointdrawLine;
+	var Polygon;
+	var lineColor;
+	pointdrawLine = [new BMap.Point(Alon,Alat),new BMap.Point(Blon,Blat)];
+	if(index==0)
+	Polygon = new BMap.Polygon(pointdrawLine, {strokeColor:"red", strokeWeight:5, strokeOpacity:0.5});
+	if(index==1)
+	Polygon = new BMap.Polygon(pointdrawLine, {strokeColor:"blue", strokeWeight:5, strokeOpacity:0.5});
+	if(index==2)
+	Polygon = new BMap.Polygon(pointdrawLine, {strokeColor:"coral", strokeWeight:5, strokeOpacity:0.5});
+	if(index==3)
+	Polygon = new BMap.Polygon(pointdrawLine, {strokeColor:"chartreuse", strokeWeight:5, strokeOpacity:0.5});
+	map.addOverlay(Polygon);
+}
+//map.clearOverlays();  
+</script>
+</body>
+</html>
